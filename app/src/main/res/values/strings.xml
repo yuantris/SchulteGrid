@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">舒尔特方格助手</string>
+    <string name="accessibility_service_description">自动点击网页上的舒尔特方格数字</string>
+</resources>
