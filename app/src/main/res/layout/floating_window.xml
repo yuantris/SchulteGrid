@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#E6FFFFFF"
+    android:padding="12dp"
+    android:elevation="8dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="舒尔特方格"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btn_toggle_alpha"
+            android:layout_width="48dp"
+            android:layout_height="28dp"
+            android:text="透明"
+            android:textSize="10sp"
+            android:textColor="#FFFFFF"
+            android:background="#666666"
+            android:padding="0dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:layout_marginEnd="4dp" />
+
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:text="×"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:background="#FF4444"
+            android:padding="0dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="状态: 已停止"
+        android:textSize="12sp"
+        android:textColor="#666666"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp" />
+
+    <TextView
+        android:id="@+id/tv_selection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="框选: 未设置"
+        android:textSize="12sp"
+        android:textColor="#999999"
+        android:layout_marginBottom="4dp" />
+
+    <!-- 延迟调节区域 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="4dp">
+
+        <TextView
+            android:id="@+id/tv_delay_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="延迟:"
+            android:textSize="12sp"
+            android:textColor="#666666"
+            android:layout_marginEnd="4dp" />
+
+        <TextView
+            android:id="@+id/tv_delay_value"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="50ms"
+            android:textSize="12sp"
+            android:textColor="#2196F3"
+            android:layout_marginEnd="4dp" />
+
+        <SeekBar
+            android:id="@+id/seekbar_delay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="999"
+            android:progress="50"
+            android:min="50" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_select"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:text="框选区域"
+        android:textSize="12sp"
+        android:textColor="#FFFFFF"
+        android:background="#2196F3"
+        android:layout_marginBottom="4dp" />
+
+    <Button
+        android:id="@+id/btn_clear_selection"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:text="清除框选"
+        android:textSize="12sp"
+        android:textColor="#FFFFFF"
+        android:background="#FF9800"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="开始"
+        android:textSize="14sp"
+        android:textColor="#FFFFFF"
+        android:background="#4CAF50" />
+
+</LinearLayout>
